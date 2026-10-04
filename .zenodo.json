@@ -1,0 +1,63 @@
+{
+  "title": "GEMATI-CARE: Uncertainty-Aware Conformal Routing for Mental-Health Crisis Escalation (code, model, and results)",
+  "upload_type": "software",
+  "version": "1.1.0",
+  "language": "eng",
+  "license": "mit",
+  "access_right": "open",
+  "description": "<p>Source code, configuration, trained model bundle, figure scripts, and machine-readable results accompanying the article <em>GEMATI-CARE: Uncertainty-Aware Conformal Routing Reduces Missed Mental-Health Crisis Escalations</em> (submitted to Jurnal RESTI). GEMATI-CARE converts calibrated risk probabilities into class-conditional (Mondrian) conformal prediction sets and routes each message to SUPPORT, CLARIFY, or ESCALATE by minimizing the worst-case engineering cost. On the official CRADLE Bench test set, the router reduced the high-risk miss rate from 23.50% (argmax) to 5.13% at alpha = 0.05. Version 1.1.0 adds the revision analyses (matched threshold, class-specific significance levels, clinician-label recalibration, McNemar and paired bootstrap tests, five-seed coverage tests, and a CPU benchmark of the TF-IDF classifier) with scripts, logs, and checksums. The pipeline runs on a CPU. The public datasets are not redistributed. This is an offline research prototype, not a diagnostic or triage tool.</p>",
+  "creators": [
+    {
+      "name": "Zeniarja, Junta",
+      "affiliation": "Universitas Dian Nuswantoro"
+    }
+  ],
+  "keywords": [
+    "conformal prediction",
+    "cost-sensitive routing",
+    "human-in-the-loop",
+    "mental-health crisis detection",
+    "uncertainty quantification",
+    "GEMATI-CARE"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/juntazen/GEMATI-CARE",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "10.18653/v1/2026.eacl-long.73",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.18653/v1/2025.emnlp-main.465",
+      "relation": "references",
+      "scheme": "doi"
+    },
+    {
+      "identifier": "10.1038/s41591-026-04577-2",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ],
+  "notes": "Funded by the Directorate General of Higher Education (DIKTI), Fundamental Research Grant, contracts 108/E5/PG.02.00.PL/2024, 027/LL6/PB/AL.04/2024, and 061/A.38-04/UDN-09/VI/2024.",
+  "contributors": [
+    {
+      "name": "Hidayat, Erwin Yudi",
+      "affiliation": "Universitas Dian Nuswantoro",
+      "type": "Supervisor"
+    },
+    {
+      "name": "Subhiyakto, Egia Rosi",
+      "affiliation": "Universitas Dian Nuswantoro",
+      "type": "DataCurator"
+    },
+    {
+      "name": "Astuti, Yani Parti",
+      "affiliation": "Universitas Dian Nuswantoro",
+      "type": "ProjectMember"
+    }
+  ]
+}
