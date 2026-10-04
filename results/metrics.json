@@ -1,0 +1,506 @@
+{
+  "run": {
+    "completed_at": "2026-09-22T19:58:38+07:00",
+    "elapsed_seconds": 200.086,
+    "python": "3.13.12",
+    "platform": "Linux-5.4.0-155-generic-x86_64-with-glibc2.31",
+    "seed": 42,
+    "alpha": 0.1,
+    "classes": [
+      "low",
+      "medium",
+      "high"
+    ],
+    "temperature": 0.6725952926296583,
+    "conformal_quantiles": {
+      "low": 0.791804252888689,
+      "medium": 0.7428040593259986,
+      "high": 0.761831393448476
+    }
+  },
+  "data": {
+    "train": {
+      "rows": 3343,
+      "risk_distribution": {
+        "high": 1505,
+        "low": 928,
+        "medium": 910
+      }
+    },
+    "calibration": {
+      "rows": 836,
+      "risk_distribution": {
+        "high": 377,
+        "low": 232,
+        "medium": 227
+      }
+    },
+    "validation": {
+      "rows": 420,
+      "risk_distribution": {
+        "high": 172,
+        "low": 134,
+        "medium": 114
+      }
+    },
+    "test": {
+      "rows": 600,
+      "risk_distribution": {
+        "high": 234,
+        "low": 186,
+        "medium": 180
+      }
+    }
+  },
+  "validation": {
+    "classification": {
+      "accuracy": 0.6476190476190476,
+      "balanced_accuracy": 0.6392283787102837,
+      "macro_f1": 0.6375424776027185,
+      "ece": 0.07540041065677669,
+      "brier": 0.4741722154840615,
+      "nll": 0.8146687189456085,
+      "per_class": {
+        "low": {
+          "precision": 0.6886792452830188,
+          "recall": 0.5447761194029851,
+          "f1": 0.6083333333333333,
+          "support": 134
+        },
+        "medium": {
+          "precision": 0.5407407407407407,
+          "recall": 0.6403508771929824,
+          "f1": 0.5863453815261044,
+          "support": 114
+        },
+        "high": {
+          "precision": 0.7039106145251397,
+          "recall": 0.7325581395348837,
+          "f1": 0.717948717948718,
+          "support": 172
+        }
+      },
+      "confusion_matrix": [
+        [
+          73,
+          33,
+          28
+        ],
+        [
+          16,
+          73,
+          25
+        ],
+        [
+          17,
+          29,
+          126
+        ]
+      ]
+    },
+    "conformal": {
+      "coverage": 0.8214285714285714,
+      "average_set_size": 1.473809523809524,
+      "singleton_rate": 0.5452380952380952,
+      "empty_rate": 0.0,
+      "per_class_coverage": {
+        "low": 0.7985074626865671,
+        "medium": 0.7894736842105263,
+        "high": 0.8604651162790697
+      }
+    },
+    "routing": {
+      "action_accuracy": 0.6190476190476191,
+      "under_escalation_rate": 0.06904761904761905,
+      "over_escalation_rate": 0.3119047619047619,
+      "high_risk_miss_rate": 0.13953488372093023,
+      "expected_cost": 1.0488095238095239,
+      "action_distribution": {
+        "SUPPORT": 58,
+        "CLARIFY": 120,
+        "ESCALATE": 242
+      }
+    }
+  },
+  "test": {
+    "uncalibrated_classification": {
+      "accuracy": 0.7016666666666667,
+      "balanced_accuracy": 0.7021367521367522,
+      "macro_f1": 0.6997951089891338,
+      "ece": 0.07836681533600894,
+      "brier": 0.4137613521462063,
+      "nll": 0.7126994911595969,
+      "per_class": {
+        "low": {
+          "precision": 0.6888888888888889,
+          "recall": 0.6666666666666666,
+          "f1": 0.6775956284153005,
+          "support": 186
+        },
+        "medium": {
+          "precision": 0.6551724137931034,
+          "recall": 0.7388888888888889,
+          "f1": 0.6945169712793734,
+          "support": 180
+        },
+        "high": {
+          "precision": 0.7557603686635944,
+          "recall": 0.7008547008547008,
+          "f1": 0.7272727272727273,
+          "support": 234
+        }
+      },
+      "confusion_matrix": [
+        [
+          124,
+          37,
+          25
+        ],
+        [
+          19,
+          133,
+          28
+        ],
+        [
+          37,
+          33,
+          164
+        ]
+      ]
+    },
+    "classification": {
+      "accuracy": 0.7016666666666667,
+      "balanced_accuracy": 0.7021367521367522,
+      "macro_f1": 0.6997951089891338,
+      "ece": 0.05363134262089632,
+      "brier": 0.40610582885896573,
+      "nll": 0.7092606764780954,
+      "per_class": {
+        "low": {
+          "precision": 0.6888888888888889,
+          "recall": 0.6666666666666666,
+          "f1": 0.6775956284153005,
+          "support": 186
+        },
+        "medium": {
+          "precision": 0.6551724137931034,
+          "recall": 0.7388888888888889,
+          "f1": 0.6945169712793734,
+          "support": 180
+        },
+        "high": {
+          "precision": 0.7557603686635944,
+          "recall": 0.7008547008547008,
+          "f1": 0.7272727272727273,
+          "support": 234
+        }
+      },
+      "confusion_matrix": [
+        [
+          124,
+          37,
+          25
+        ],
+        [
+          19,
+          133,
+          28
+        ],
+        [
+          37,
+          33,
+          164
+        ]
+      ]
+    },
+    "mondrian_conformal": {
+      "coverage": 0.8633333333333333,
+      "average_set_size": 1.5,
+      "singleton_rate": 0.52,
+      "empty_rate": 0.0,
+      "per_class_coverage": {
+        "low": 0.8387096774193549,
+        "medium": 0.8666666666666667,
+        "high": 0.8803418803418803
+      }
+    },
+    "global_conformal": {
+      "coverage": 0.8633333333333333,
+      "average_set_size": 1.4633333333333334,
+      "singleton_rate": 0.5566666666666666,
+      "empty_rate": 0.0,
+      "per_class_coverage": {
+        "low": 0.8172043010752689,
+        "medium": 0.8944444444444445,
+        "high": 0.8760683760683761
+      }
+    },
+    "routing_cstcr": {
+      "action_accuracy": 0.6583333333333333,
+      "under_escalation_rate": 0.051666666666666666,
+      "over_escalation_rate": 0.29,
+      "high_risk_miss_rate": 0.11965811965811966,
+      "expected_cost": 0.9591666666666666,
+      "action_distribution": {
+        "SUPPORT": 85,
+        "CLARIFY": 187,
+        "ESCALATE": 328
+      }
+    },
+    "routing_global_conformal": {
+      "action_accuracy": 0.66,
+      "under_escalation_rate": 0.055,
+      "over_escalation_rate": 0.285,
+      "high_risk_miss_rate": 0.12393162393162394,
+      "expected_cost": 0.9575,
+      "action_distribution": {
+        "SUPPORT": 88,
+        "CLARIFY": 189,
+        "ESCALATE": 323
+      }
+    },
+    "routing_argmax_calibrated": {
+      "action_accuracy": 0.7016666666666667,
+      "under_escalation_rate": 0.14833333333333334,
+      "over_escalation_rate": 0.15,
+      "high_risk_miss_rate": 0.29914529914529914,
+      "expected_cost": 1.4541666666666666,
+      "action_distribution": {
+        "SUPPORT": 180,
+        "CLARIFY": 203,
+        "ESCALATE": 217
+      }
+    },
+    "routing_argmax_uncalibrated": {
+      "action_accuracy": 0.7016666666666667,
+      "under_escalation_rate": 0.14833333333333334,
+      "over_escalation_rate": 0.15,
+      "high_risk_miss_rate": 0.29914529914529914,
+      "expected_cost": 1.4541666666666666,
+      "action_distribution": {
+        "SUPPORT": 180,
+        "CLARIFY": 203,
+        "ESCALATE": 217
+      }
+    }
+  },
+  "tfidf_baseline": {
+    "test": {
+      "classification": {
+        "accuracy": 0.74,
+        "balanced_accuracy": 0.7362420733388474,
+        "macro_f1": 0.735632756366428,
+        "ece": 0.1175210639281616,
+        "brier": 0.38587022157098794,
+        "nll": 0.6833083402297714,
+        "per_class": {
+          "low": {
+            "precision": 0.7321428571428571,
+            "recall": 0.6612903225806451,
+            "f1": 0.6949152542372882,
+            "support": 186
+          },
+          "medium": {
+            "precision": 0.7025641025641025,
+            "recall": 0.7611111111111111,
+            "f1": 0.7306666666666667,
+            "support": 180
+          },
+          "high": {
+            "precision": 0.7763713080168776,
+            "recall": 0.7863247863247863,
+            "f1": 0.7813163481953291,
+            "support": 234
+          }
+        },
+        "confusion_matrix": [
+          [
+            123,
+            33,
+            30
+          ],
+          [
+            20,
+            137,
+            23
+          ],
+          [
+            25,
+            25,
+            184
+          ]
+        ]
+      },
+      "routing_argmax": {
+        "action_accuracy": 0.74,
+        "under_escalation_rate": 0.11666666666666667,
+        "over_escalation_rate": 0.14333333333333334,
+        "high_risk_miss_rate": 0.21367521367521367,
+        "expected_cost": 1.1658333333333333,
+        "action_distribution": {
+          "SUPPORT": 168,
+          "CLARIFY": 195,
+          "ESCALATE": 237
+        }
+      }
+    },
+    "indosafety_external": {
+      "rows": 4514,
+      "mental_health_related_rows_by_keyword": 243,
+      "prediction_distribution": {
+        "low": 4510,
+        "medium": 2,
+        "high": 2
+      },
+      "mental_subset_prediction_distribution": {
+        "low": 243
+      },
+      "by_language": [
+        {
+          "language": "colloquial",
+          "predicted_risk": "low",
+          "proportion": 1.0
+        },
+        {
+          "language": "indonesian-formal",
+          "predicted_risk": "low",
+          "proportion": 0.9988066825775657
+        },
+        {
+          "language": "indonesian-formal",
+          "predicted_risk": "high",
+          "proportion": 0.0007955449482895784
+        },
+        {
+          "language": "indonesian-formal",
+          "predicted_risk": "medium",
+          "proportion": 0.0003977724741447892
+        },
+        {
+          "language": "java",
+          "predicted_risk": "low",
+          "proportion": 0.998
+        },
+        {
+          "language": "java",
+          "predicted_risk": "medium",
+          "proportion": 0.002
+        },
+        {
+          "language": "minangkabau",
+          "predicted_risk": "low",
+          "proportion": 1.0
+        },
+        {
+          "language": "sunda",
+          "predicted_risk": "low",
+          "proportion": 1.0
+        }
+      ],
+      "note": "Distributional audit only; IndoSafety categories are not remapped as CRADLE gold labels."
+    }
+  },
+  "bootstrap_high_risk_miss_difference_cstcr_minus_argmax": {
+    "mean_difference": -0.1806253182390173,
+    "ci95_low": -0.23377314175186514,
+    "ci95_high": -0.1298695753784202,
+    "repetitions": 1000
+  },
+  "indosafety_external": {
+    "rows": 4514,
+    "mental_health_related_rows_by_keyword": 243,
+    "prediction_distribution": {
+      "low": 4005,
+      "high": 344,
+      "medium": 165
+    },
+    "mental_subset_prediction_distribution": {
+      "low": 150,
+      "high": 81,
+      "medium": 12
+    },
+    "by_language": [
+      {
+        "language": "colloquial",
+        "predicted_risk": "low",
+        "proportion": 0.856
+      },
+      {
+        "language": "colloquial",
+        "predicted_risk": "high",
+        "proportion": 0.11
+      },
+      {
+        "language": "colloquial",
+        "predicted_risk": "medium",
+        "proportion": 0.034
+      },
+      {
+        "language": "indonesian-formal",
+        "predicted_risk": "low",
+        "proportion": 0.8595863166268894
+      },
+      {
+        "language": "indonesian-formal",
+        "predicted_risk": "high",
+        "proportion": 0.08750994431185362
+      },
+      {
+        "language": "indonesian-formal",
+        "predicted_risk": "medium",
+        "proportion": 0.05290373906125696
+      },
+      {
+        "language": "java",
+        "predicted_risk": "low",
+        "proportion": 0.942
+      },
+      {
+        "language": "java",
+        "predicted_risk": "high",
+        "proportion": 0.042
+      },
+      {
+        "language": "java",
+        "predicted_risk": "medium",
+        "proportion": 0.016
+      },
+      {
+        "language": "minangkabau",
+        "predicted_risk": "low",
+        "proportion": 0.938
+      },
+      {
+        "language": "minangkabau",
+        "predicted_risk": "high",
+        "proportion": 0.05
+      },
+      {
+        "language": "minangkabau",
+        "predicted_risk": "medium",
+        "proportion": 0.012
+      },
+      {
+        "language": "sunda",
+        "predicted_risk": "low",
+        "proportion": 0.952
+      },
+      {
+        "language": "sunda",
+        "predicted_risk": "high",
+        "proportion": 0.046
+      },
+      {
+        "language": "sunda",
+        "predicted_risk": "medium",
+        "proportion": 0.002
+      }
+    ],
+    "note": "Distributional audit only; IndoSafety categories are not remapped as CRADLE gold labels."
+  },
+  "limitations": [
+    "Risk labels are engineering routing categories derived from CRADLE labels, not clinical diagnoses.",
+    "IndoSafety is used as a distributional external audit because its gold taxonomy differs.",
+    "No patient-level or real-world safety claim is supported by this offline experiment."
+  ]
+}

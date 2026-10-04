@@ -1,0 +1,61 @@
+{
+  "cradle_train": {
+    "rows": 4179,
+    "columns": [
+      "id",
+      "text",
+      "source_label",
+      "risk",
+      "source",
+      "official_split"
+    ],
+    "risk_distribution": {
+      "high": 1882,
+      "low": 1160,
+      "medium": 1137
+    }
+  },
+  "cradle_validation": {
+    "rows": 420,
+    "columns": [
+      "id",
+      "text",
+      "source_label",
+      "risk",
+      "source",
+      "official_split"
+    ],
+    "risk_distribution": {
+      "high": 172,
+      "low": 134,
+      "medium": 114
+    }
+  },
+  "cradle_test": {
+    "rows": 600,
+    "columns": [
+      "id",
+      "text",
+      "source_label",
+      "risk",
+      "source",
+      "official_split"
+    ],
+    "risk_distribution": {
+      "high": 234,
+      "low": 186,
+      "medium": 180
+    }
+  },
+  "indosafety": {
+    "rows": 4514,
+    "columns": [
+      "id",
+      "text",
+      "category",
+      "language",
+      "source"
+    ],
+    "risk_distribution": null
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "stage": "complete",
+  "completed_steps": 13,
+  "total_steps": 13,
+  "percent": 100.0,
+  "started_at": "2026-09-22T19:55:18+07:00",
+  "updated_at": "2026-09-22T19:58:38+07:00",
+  "elapsed_seconds": 200.09,
+  "estimated_remaining_seconds": 0.0,
+  "message": "Eksperimen CPU selesai; metrics.json siap untuk pembuatan paper"
+}

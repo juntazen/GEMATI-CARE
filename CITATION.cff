@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the article in preferred-citation and this software."
+title: "GEMATI-CARE: Uncertainty-Aware Conformal Routing for Mental-Health Crisis Escalation"
+version: 1.1.0
+date-released: 2026-10-03
+license: MIT
+repository-code: "https://github.com/juntazen/GEMATI-CARE"
+authors:
+  - family-names: Zeniarja
+    given-names: Junta
+    affiliation: "Universitas Dian Nuswantoro"
+    email: junta@dsn.dinus.ac.id
+preferred-citation:
+  type: article
+  title: "GEMATI-CARE: Uncertainty-Aware Conformal Routing Reduces Missed Mental-Health Crisis Escalations"
+  journal: "Jurnal RESTI (Rekayasa Sistem dan Teknologi Informasi)"
+  status: submitted
+  year: 2026
+  authors:
+    - family-names: Zeniarja
+      given-names: Junta
+      affiliation: "Universitas Dian Nuswantoro"
+    - family-names: Hidayat
+      given-names: Erwin Yudi
+      affiliation: "Universitas Dian Nuswantoro"
+    - family-names: Subhiyakto
+      given-names: Egia Rosi
+      affiliation: "Universitas Dian Nuswantoro"
+    - family-names: Astuti
+      given-names: Yani Parti
+      affiliation: "Universitas Dian Nuswantoro"

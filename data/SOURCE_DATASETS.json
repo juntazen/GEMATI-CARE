@@ -1,0 +1,25 @@
+{
+  "public_sources": {
+    "CRADLE": "https://github.com/emorynlp/CradleBench",
+    "IndoSafety": "https://github.com/falensiazmi/IndoSafety",
+    "SIM-VAIL": "https://github.com/veithweilnhammer/sim-vail",
+    "MiniLM": "https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2"
+  },
+  "snapshotted_files": {
+    "IndoSafety_eval1": {
+      "path": "data/raw/indosafety_eval1.xlsx",
+      "bytes": 172880,
+      "sha256": "5d9cfebfb8a5a118f184c56a43bf063964da43b170e4dbaf310679a4d928c54f"
+    },
+    "IndoSafety_eval2": {
+      "path": "data/raw/indosafety_eval2.xlsx",
+      "bytes": 123069,
+      "sha256": "3c6bea986b67ea6c8aab4d0de69c2f48860e13fb85e0e0b61b87e081fb7578a0"
+    },
+    "SIM_VAIL_source_zip": {
+      "path": "data/external/sim-vail-main.zip",
+      "bytes": 204180291,
+      "sha256": "1471d6a6bcf99037861091f67753202500d5c15e564007ed6ca46f930b5001dd"
+    }
+  }
+}

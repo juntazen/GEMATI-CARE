@@ -1,0 +1,23 @@
+{
+  "seed": 42,
+  "alpha": 0.1,
+  "bootstrap_repetitions": 1000,
+  "max_features_word": 50000,
+  "max_features_char": 70000,
+  "min_df": 2,
+  "logistic_c": 2.0,
+  "max_iter": 1500,
+  "encoder_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+  "encoder_batch_size": 64,
+  "encoder_max_length": 128,
+  "temporal_rho": 0.85,
+  "temporal_high": 0.65,
+  "temporal_low": 0.35,
+  "cost_matrix": {
+    "SUPPORT": [0.0, 3.0, 12.0],
+    "CLARIFY": [1.0, 0.5, 5.0],
+    "ESCALATE": [3.0, 1.0, 0.0]
+  },
+  "risk_labels": ["low", "medium", "high"],
+  "actions": ["SUPPORT", "CLARIFY", "ESCALATE"]
+}

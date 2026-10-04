@@ -1,0 +1,17 @@
+PASS  confusion_matrix: expected [[123, 34, 29], [19, 139, 22], [26, 29, 179]], observed [[123, 34, 29], [19, 139, 22], [26, 29, 179]]
+PASS  macro_f1: expected 0.7314, observed 0.7314052231582319
+PASS  ece: expected 0.0323, observed 0.032301683345615485
+PASS  temperature: expected 0.5344, observed 0.5343559393587862
+PASS  minimax_0.05_miss: expected 0.0513, observed 0.05128205128205128
+PASS  minimax_0.05_under: expected 0.0217, observed 0.021666666666666667
+PASS  minimax_0.05_over: expected 0.3933, observed 0.3933333333333333
+PASS  minimax_0.05_cost: expected 0.9583, observed 0.9583333333333334
+PASS  minimax_0.05_SCE: expected [33, 154, 413], observed [33, 154, 413]
+PASS  minimax_0.10_coverage: expected 0.8833, observed 0.8833333333333333
+PASS  minimax_0.10_miss: expected 0.1026, observed 0.10256410256410256
+PASS  minimax_0.10_over: expected 0.2683, observed 0.2683333333333333
+PASS  argmax_miss: expected 0.235, observed 0.23504273504273504
+PASS  argmax_over: expected 0.1417, observed 0.14166666666666666
+PASS  argmax_cost: expected 1.2108, observed 1.2108333333333334
+PASS  validation_0.05_high_coverage: expected 0.9477, observed 0.9476744186046512
+SANITY GATE: PASS (all values match to 4 decimals)

@@ -1,0 +1,41 @@
+R1 seed 11 done
+R1 seed 29 done
+R1 seed 42 done
+R1 seed 71 done
+R1 seed 101 done
+
+== R1 counts (20 seed x alpha cases per class)
+{
+ "low": {
+  "cases": 20,
+  "not_significant_two_sided": 3,
+  "significantly_below_nominal_one_sided": 18
+ },
+ "medium": {
+  "cases": 20,
+  "not_significant_two_sided": 4,
+  "significantly_below_nominal_one_sided": 16
+ },
+ "high": {
+  "cases": 20,
+  "not_significant_two_sided": 19,
+  "significantly_below_nominal_one_sided": 2
+ }
+}
+== R1 mean +- SD
+0.05 {'low_coverage_mean': 0.906, 'low_coverage_sd': 0.0352, 'medium_coverage_mean': 0.8947, 'medium_coverage_sd': 0.024, 'high_coverage_mean': 0.9314, 'high_coverage_sd': 0.0195, 'miss_mean': 0.0686, 'miss_sd': 0.0195, 'over_mean': 0.4181, 'over_sd': 0.0243, 'under_mean': 0.0295, 'under_sd': 0.0096}
+0.1 {'low_coverage_mean': 0.791, 'low_coverage_sd': 0.0501, 'medium_coverage_mean': 0.8105, 'medium_coverage_sd': 0.0288, 'high_coverage_mean': 0.8826, 'high_coverage_sd': 0.0119, 'miss_mean': 0.1174, 'miss_sd': 0.0119, 'over_mean': 0.3381, 'over_sd': 0.0071, 'under_mean': 0.0552, 'under_sd': 0.0039}
+0.15 {'low_coverage_mean': 0.6955, 'low_coverage_sd': 0.0515, 'medium_coverage_mean': 0.7719, 'medium_coverage_sd': 0.0297, 'high_coverage_mean': 0.8326, 'high_coverage_sd': 0.0211, 'miss_mean': 0.1674, 'miss_sd': 0.0211, 'over_mean': 0.2838, 'over_sd': 0.0085, 'under_mean': 0.081, 'under_sd': 0.0084}
+0.2 {'low_coverage_mean': 0.6299, 'low_coverage_sd': 0.0477, 'medium_coverage_mean': 0.7158, 'medium_coverage_sd': 0.0375, 'high_coverage_mean': 0.7884, 'high_coverage_sd': 0.0134, 'miss_mean': 0.2116, 'miss_sd': 0.0134, 'over_mean': 0.2457, 'over_sd': 0.0066, 'under_mean': 0.1071, 'under_sd': 0.0048}
+== R2 policies (point [CI])
+minimax_alpha_0.05 {'miss': '0.0513 [0.0264, 0.0798]', 'over': '0.3933 [0.3533, 0.4333]', 'under': '0.0217 [0.0117, 0.0334]', 'cost': '0.9583 [0.8558, 1.0650]'} [33, 154, 413]
+E1_matched_threshold {'miss': '0.0513 [0.0264, 0.0798]', 'over': '0.3500 [0.3100, 0.3900]', 'under': '0.0283 [0.0150, 0.0417]', 'cost': '0.9642 [0.8441, 1.0917]'} [65, 124, 411]
+E2_class_specific_alpha {'miss': '0.0513 [0.0264, 0.0798]', 'over': '0.3483 [0.3083, 0.3867]', 'under': '0.0300 [0.0167, 0.0433]', 'cost': '0.9808 [0.8533, 1.1109]'} [69, 118, 413]
+argmax {'miss': '0.2350 [0.1807, 0.2930]', 'over': '0.1417 [0.1150, 0.1733]', 'under': '0.1233 [0.0983, 0.1500]', 'cost': '1.2108 [1.0108, 1.4259]'} [168, 202, 230]
+== R2 paired differences
+E2_class_specific_alpha - minimax_alpha_0.05 {'over': '-0.0450 [-0.0617, -0.0300] excl0=True', 'miss': '+0.0000 [+0.0000, +0.0000] excl0=False', 'under': '+0.0083 [+0.0017, +0.0167] excl0=True', 'cost': '+0.0225 [-0.0233, +0.0750] excl0=False'}
+E1_matched_threshold - minimax_alpha_0.05 {'over': '-0.0433 [-0.0583, -0.0283] excl0=True', 'miss': '+0.0000 [+0.0000, +0.0000] excl0=False', 'under': '+0.0067 [+0.0017, +0.0133] excl0=True', 'cost': '+0.0058 [-0.0350, +0.0542] excl0=False'}
+== R3 cross-conformal (mean over folds)
+0.05 {'low_coverage': 0.9559, 'medium_coverage': 0.9922, 'high_coverage': 0.9538, 'overall_coverage': 0.966, 'high_risk_miss_rate': 0.0462, 'over_escalation_rate': 0.4307, 'under_escalation_rate': 0.018, 'expected_cost': 0.9862} {'low': {'folds_not_significant_two_sided': 5, 'folds_significantly_below_one_sided': 0}, 'medium': {'folds_not_significant_two_sided': 1, 'folds_significantly_below_one_sided': 0}, 'high': {'folds_not_significant_two_sided': 5, 'folds_significantly_below_one_sided': 0}}
+0.1 {'low_coverage': 0.9054, 'medium_coverage': 0.97, 'high_coverage': 0.9274, 'overall_coverage': 0.9333, 'high_risk_miss_rate': 0.0726, 'over_escalation_rate': 0.347, 'under_escalation_rate': 0.0287, 'expected_cost': 0.8898} {'low': {'folds_not_significant_two_sided': 5, 'folds_significantly_below_one_sided': 0}, 'medium': {'folds_not_significant_two_sided': 0, 'folds_significantly_below_one_sided': 0}, 'high': {'folds_not_significant_two_sided': 3, 'folds_significantly_below_one_sided': 0}}
+== R5 {'all_15_points_match': True, 'added_point_alpha_0.05_coverage': 0.9383333333333334, 'published_png_sha256': '0b9310a0c1cef348bc625471ce880dc2e4db764aebbe552f233bea3576cecb0c', 'regenerated_png_sha256': '0b9310a0c1cef348bc625471ce880dc2e4db764aebbe552f233bea3576cecb0c', 'published_png_byte_identical_to_regeneration': True}

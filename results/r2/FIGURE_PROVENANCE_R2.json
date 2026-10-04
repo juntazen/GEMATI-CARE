@@ -1,0 +1,28 @@
+{
+  "script": "scripts/r2_figures.py",
+  "inputs": {
+    "r2_extra_metrics.json": "ee2f0b028e9741f75aa3159754b140616bf5edbf67604935b0f764f50b21baad",
+    "r2_robustness_metrics.json": "052af5536fbc142e65c06d244a140618c453b43fb5c447242d5313c1936e6024"
+  },
+  "settings": {
+    "dpi": 600,
+    "size_in": [
+      4.8,
+      3.6
+    ],
+    "palette": [
+      "#123B66",
+      "#19A7CE",
+      "#13A89E",
+      "#F2A900"
+    ]
+  },
+  "figures": {
+    "results/r2/fig3_tradeoff_with_markers.png": "6b7286a50b04610901a6b987f16b71a92c785dc88e52ddd03e8be4adb0414f31",
+    "results/r2/fig3_tradeoff_with_markers.pdf": "5837d9777b7c5d457d30dd55624e712519c774fbabfd9fedb9238f716593b5b4",
+    "results/r2/fig4_counts.png": "b77a4d9ea2e442af533ce8540926163b63b3b41b59f59b81e6ec438b4379cb59",
+    "results/r2/fig4_counts.pdf": "553fe44be02cfb7a731d51bdf0fb503a32fdda1bcc5e4c2a2a9fc902babb1bb8",
+    "results/r2/fig5_pareto_policies.png": "9259c77cf968e690b4ec4633f9db137f7898011f170ad4b27576aa155ff9de55",
+    "results/r2/fig5_pareto_policies.pdf": "36a16fc759c0469795df4211876972e00d2863efa33c3c70bb926e08380231e4"
+  }
+}
